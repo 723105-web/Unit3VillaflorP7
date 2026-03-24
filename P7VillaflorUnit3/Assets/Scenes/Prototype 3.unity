@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3821684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8325407864820103240, guid: 994622c8ad82dee44b3820e1608bc123, type: 3}
+  m_PrefabInstance: {fileID: 2702935662778873114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +414,8 @@ GameObject:
   - component: {fileID: 835818921}
   - component: {fileID: 835818920}
   - component: {fileID: 835818922}
+  - component: {fileID: 835818923}
+  - component: {fileID: 835818924}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -498,6 +505,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d64eda30684cbd4792b80c6fb2a577e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &835818923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369dd1fa97b9bab469d942e739672351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &835818924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 112.79999, y: 18.781641, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1110056774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
@@ -564,7 +604,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!1 &2014335011
 GameObject:
@@ -703,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73c4571e9f84464ab8a0934109d7794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaaclePrefab: {fileID: 8325407864820103240, guid: 994622c8ad82dee44b3820e1608bc123, type: 3}
+  obstaaclePrefab: {fileID: 3821684}
 --- !u!4 &2075916351
 Transform:
   m_ObjectHideFlags: 0
